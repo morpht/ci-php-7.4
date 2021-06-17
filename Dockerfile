@@ -10,6 +10,9 @@ RUN apk add --no-cache --update git \
         bash \
         openssh-client \
         rsync \
+        libpng libpng-dev \
+    && docker-php-ext-install gd \
+    && apk del libpng-dev \
     && rm -rf /var/cache/apk/* \
     && curl -L -o /usr/local/bin/composer https://github.com/composer/composer/releases/download/${COMPOSER_VERSION}/composer.phar \
     && echo "$COMPOSER_HASH_SHA256  /usr/local/bin/composer" | sha256sum -c \

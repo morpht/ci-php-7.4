@@ -9,6 +9,7 @@ ENV COMPOSER_VERSION=2.0.14 \
 RUN apk add --no-cache --update git \
         bash \
         openssh-client \
+        patch \
         rsync \
         libpng libpng-dev \
     && docker-php-ext-install gd \

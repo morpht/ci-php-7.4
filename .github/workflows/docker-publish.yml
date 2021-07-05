@@ -1,7 +1,8 @@
 name: build_and_publish
 on:
   push:
-    branches:
+    branches-ignore:
+      # prevent building on commits to master (use tag to build)
       - 'master'
     tags:
       # Build on every tag:

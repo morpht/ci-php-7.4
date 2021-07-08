@@ -1,4 +1,4 @@
-FROM php:7.4.20-fpm-alpine3.13
+FROM php:7.4-fpm-alpine3.14
 
 LABEL maintainer="marji@morpht.com"
 LABEL org.opencontainers.image.source="https://github.com/morpht/ci-php-7.4"

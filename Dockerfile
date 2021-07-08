@@ -9,10 +9,11 @@ ENV COMPOSER_VERSION=2.1.3 \
 RUN apk add --no-cache --update git \
         bash \
         openssh-client \
+        mysql-client \
         patch \
         rsync \
         libpng libpng-dev \
-    && docker-php-ext-install gd \
+    && docker-php-ext-install gd pdo pdo_mysql \
     && apk del libpng-dev \
     && rm -rf /var/cache/apk/* \
     && curl -L -o /usr/local/bin/composer https://github.com/composer/composer/releases/download/${COMPOSER_VERSION}/composer.phar \

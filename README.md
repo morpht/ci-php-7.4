@@ -1,11 +1,11 @@
 # ci-php-7.4
 
-Docker image based on the [uselagoon/php-7.4-cli-drupal](https://hub.docker.com/r/uselagoon/php-7.4-cli-drupal) docker image - https://hub.docker.com/r/uselagoon/php-7.4-cli-drupal
+Docker image based on the official dockerhub image php:7.4-fpm-alpine3.14
 
 A few modifications:
 
-- composer updated to v2
-- installed git package
-- removed /opt/drupal
+- added composer v2.1.x
+- installed several packages, e.g. git and mysql-client
+- added php extensions - gd, pdo_mysql
 
 Published in GHCR - https://github.com/orgs/morpht/packages/container/package/ci-php-7.4

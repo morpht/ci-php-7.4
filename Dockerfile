@@ -1,10 +1,10 @@
-FROM php:7.4.20-fpm-alpine3.13
+FROM php:7.4.24-fpm-alpine3.14
 
 LABEL maintainer="marji@morpht.com"
 LABEL org.opencontainers.image.source="https://github.com/morpht/ci-php-7.4"
 
-ENV COMPOSER_VERSION=2.1.3 \
-  COMPOSER_HASH_SHA256=f8a72e98dec8da736d8dac66761ca0a8fbde913753e9a43f34112367f5174d11
+ENV COMPOSER_VERSION=2.1.9 \
+  COMPOSER_HASH_SHA256=4d00b70e146c17d663ad2f9a21ebb4c9d52b021b1ac15f648b4d371c04d648ba
 
 RUN apk add --no-cache --update git \
         bash \

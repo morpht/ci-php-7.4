@@ -3,8 +3,8 @@ FROM php:7.4.33-fpm-alpine3.16
 LABEL maintainer="marji@morpht.com"
 LABEL org.opencontainers.image.source="https://github.com/morpht/ci-php-7.4"
 
-ENV COMPOSER_VERSION=2.3.10 \
-  COMPOSER_HASH_SHA256=d808272f284fa8e0f8b470703e1438ac8f362030bbc9d12e29530277d767aff0
+ENV COMPOSER_VERSION=2.4.4 \
+  COMPOSER_HASH_SHA256=c252c2a2219956f88089ffc242b42c8cb9300a368fd3890d63940e4fc9652345
 
 RUN apk add --no-cache --update git \
         bash \
